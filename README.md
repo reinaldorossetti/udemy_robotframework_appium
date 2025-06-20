@@ -1,36 +1,37 @@
-# udemy_robotframework_appium
+# udemy_robotframework_appium 🚀🤖
 
-Pré-requisitos
+## Pré-requisitos 🛠️
 Antes de começar, certifique-se de ter os seguintes itens instalados e configurados em seu sistema:
 
-Python 3.11.9: O Robot Framework e a AppiumLibrary requerem Python.
-*   Verifique a instalação: `python --version` ou `python3 --version`
-*   [Download Python Windows](https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe)
-*   [Download Python](https://www.python.org/downloads/release/python-3119/)
+- **Python 3.11.9**: O Robot Framework e a AppiumLibrary requerem Python.  
+  * Verifique a instalação: `python --version` ou `python3 --version`  
+  * [⬇️ Download Python Windows](https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe)  
+  * [⬇️ Download Python](https://www.python.org/downloads/release/python-3119/)
 
-The Faster CPython Project is already yielding some exciting results. Python 3.11 is up to 10-60% faster than Python 3.10. On average, we measured a 1.22x speedup on the standard benchmark suite. See Faster CPython for details.
+> 💡 *O Python 3.11 é até 60% mais rápido que o 3.10. Veja [Faster CPython](https://devblogs.microsoft.com/python/python-311-faster-cpython/) para detalhes.*
 
-Java Development Kit (JDK): Necessário para o Appium e ferramentas Android.
-*   Verifique a instalação: `java -version`
-*   [Download JDK](https://www.oracle.com/java/technologies/downloads/)
-Android Studio (para Android): Inclui o Android SDK, ferramentas de linha de comando e emuladores.
-*   Configure as variáveis de ambiente `ANDROID_HOME` e adicione os diretórios `platform-tools` e `tools` ao seu `PATH`.
-*   [Download Android Studio](https://developer.android.com/studio)
-Xcode (para iOS, macOS apenas): Necessário para desenvolver e testar aplicações iOS, inclui simuladores.
+- **Java Development Kit (JDK)**: Necessário para o Appium e ferramentas Android.  
+  * Verifique a instalação: `java -version`  
+  * [⬇️ Download JDK](https://www.oracle.com/java/technologies/downloads/)
 
-*   Instale as ferramentas de linha de comando: `xcode-select --install`
+- **Android Studio** (para Android): Inclui o Android SDK, ferramentas de linha de comando e emuladores.  
+  * Configure as variáveis de ambiente `ANDROID_HOME` e adicione os diretórios `platform-tools` e `tools` ao seu `PATH`.  
+  * [⬇️ Download Android Studio](https://developer.android.com/studio)
 
-Nodejs 20.18.2 e npm (ou yarn): Necessário para instalar e rodar o Appium Server.
-*   Verifique a instalação: `node --version` e `npm --version`
-*   [Download Node.js](https://nodejs.org/en/blog/release/v20.18.2)
+- **Xcode** (para iOS, macOS apenas): Necessário para desenvolver e testar aplicações iOS, inclui simuladores.  
+  * Instale as ferramentas de linha de comando: `xcode-select --install`
 
-Appium Inspector
-*   [Appium Inspector](https://github.com/appium/appium-inspector/releases/tag/v2025.3.1)
+- **Node.js 20.18.2 e npm (ou yarn)**: Necessário para instalar e rodar o Appium Server.  
+  * Verifique a instalação: `node --version` e `npm --version`  
+  * [⬇️ Download Node.js](https://nodejs.org/en/blog/release/v20.18.2)
 
-Git
-*   [Appium Inspector](https://git-scm.com/downloads)
+- **Appium Inspector**  
+  * [⬇️ Appium Inspector](https://github.com/appium/appium-inspector/releases/tag/v2025.3.1)
 
-```
+- **Git**  
+  * [⬇️ Download Git](https://git-scm.com/downloads)
+
+```bash
 npm config set strict-ssl false
 npm install -g appium 
 appium driver install uiautomator2
@@ -38,64 +39,107 @@ appium driver update uiautomator2
 appium -p 4723 -a 127.0.0.1 -pa wd/hub --allow-cors
 ```
 
-VS-CODE:
-*   Plugin do Python para VS-CODE:
-https://marketplace.visualstudio.com/items?itemName=ms-python.python
+- **VS Code**  
+  * [🐍 Plugin do Python para VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)  
+  * [🤖 Plugin Robot Library para VS Code](https://marketplace.visualstudio.com/items?itemName=robocorp.robotframework-lsp)
 
-*   Plugin Robot Library para VS-CODE:
-https://marketplace.visualstudio.com/items?itemName=robocorp.robotframework-lsp
+---
 
-## Compatibility Matrix
+## Configuração de variáveis de ambiente com `.env` 🌱
 
-|Appium Python Client| Selenium binding| Python version |
-|----|----|----|
-|`5.1.1`+| <5.0.0 | 3.9+ |
-|`4.5.0` - `5.1.0`|`4.26.0` - `4.31.0` | 3.9+ |
-|`4.3.0` -  `4.4.0`|`4.26.0` - `4.31.0` | 3.8+ |
-|`3.0.0` - `4.2.1` |`4.12.0` - `4.25.0` | 3.8+ |
-|`2.10.0` - `2.11.1` |`4.1.0` - `4.11.2` | 3.7+ |
-|`2.2.0` - `2.9.0` |`4.1.0` - `4.9.0` | 3.7+ |
-|`2.0.0` - `2.1.4` |`4.0.0` | 3.7+ |
-|`1.0.0` - `1.3.0` |`3.x`| 3.7+ |
-|`0.52` and below|`3.x`| 2.7, 3.4 - 3.7 |
+1. **Instale a biblioteca python-dotenv**  
+   No terminal:
+   ```bash
+   pip install python-dotenv
+   ```
 
-The Appium Python Client depends on [Selenium Python binding](https://pypi.org/project/selenium/), thus
-the Selenium Python binding update might affect the Appium Python Client behavior.
-For example, some changes in the Selenium binding could break the Appium client.
+2. **Crie um arquivo `.env` na raiz do projeto**  
+   No terminal:
+   ```bash
+   echo SECRET_KEY=suachavesecreta > .env
+   echo API_URL=https://suaapi.com >> .env
+   ```
+   Adicione todas as variáveis necessárias no arquivo `.env`.
 
-Instalação dos Pacotes
+3. **Carregue as variáveis no seu código Python**  
+   No início do seu script Python, adicione:
+   ```python
+   from dotenv import load_dotenv
+   import os
+
+   load_dotenv()  # Carrega as variáveis do .env
+
+   # Exemplo de uso
+   api_url = os.getenv("API_URL")
+   secret_key = os.getenv("SECRET_KEY")
+   ```
+
+4. **Adicione o `.env` ao `.gitignore`**  
+   Para evitar subir informações sensíveis ao repositório:
+   ```bash
+   echo .env >> .gitignore
+   ```
+
+---
+
+## Compatibility Matrix 📊
+
+| Appium Python Client | Selenium binding | Python version |
+|---------------------|------------------|---------------|
+| `5.1.1`+            | <5.0.0           | 3.9+          |
+| `4.5.0` - `5.1.0`   | 4.26.0 - 4.31.0  | 3.9+          |
+| `4.3.0` -  `4.4.0`  | 4.26.0 - 4.31.0  | 3.8+          |
+| `3.0.0` - `4.2.1`   | 4.12.0 - 4.25.0  | 3.8+          |
+| `2.10.0` - `2.11.1` | 4.1.0 - 4.11.2   | 3.7+          |
+| `2.2.0` - `2.9.0`   | 4.1.0 - 4.9.0    | 3.7+          |
+| `2.0.0` - `2.1.4`   | 4.0.0            | 3.7+          |
+| `1.0.0` - `1.3.0`   | 3.x              | 3.7+          |
+| `0.52` and below    | 3.x              | 2.7, 3.4-3.7  |
+
+> ⚠️ O Appium Python Client depende do [Selenium Python binding](https://pypi.org/project/selenium/), portanto, atualizações no Selenium podem afetar o funcionamento do Appium Client.
+
+---
+
+## Instalação dos Pacotes 📦
+
+Veja mais em:  
 https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
-Versão do Robot Framework adotado no curso (Atual no momento do curso):
-Robot Framework 7.3.1
-```
+**Versão do Robot Framework adotado no curso (Atual no momento do curso):**  
+Robot Framework 7.3.1  
+```bash
 pip install robotframework==7.3.1
 ```
-Robot Appium Library
-```
+**Robot Appium Library**  
+```bash
 pip install robotframework-appiumlibrary==2.1.0
 pip install Appium-Python-Client
 ```
 
-Download do APK do nosso primeiro exemplo:
-https://github.com/serhatbolsu/robotframework-appium-sample/blob/master/demoapp/ApiDemos-debug.apk
+---
 
-Library Documentation:
+## Download do APK do nosso primeiro exemplo 📱
 
-Robot Framework:
-https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html
-https://github.com/robotframework/robotframework
+[⬇️ ApiDemos-debug.apk](https://github.com/serhatbolsu/robotframework-appium-sample/blob/master/demoapp/ApiDemos-debug.apk)
 
-Robot Appium:
-https://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html
-https://github.com/serhatbolsu/robotframework-appiumlibrary
+---
 
-Appium Client:
-https://pypi.org/project/Appium-Python-Client/
-https://github.com/appium/python-client
+## Documentação das Libraries 📚
 
-The Appium Python Client depends on Selenium Python binding, thus the Selenium Python binding update might affect the Appium Python Client behavior. For example, some changes in the Selenium binding could break the Appium client.
+- **Robot Framework:**  
+  [User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)  
+  [GitHub](https://github.com/robotframework/robotframework)
 
-Appium:
-https://appium.io/docs/en/2.2/quickstart/install/
-https://appium.io/docs/en/2.2/quickstart/uiauto2-driver/
+- **Robot Appium:**  
+  [AppiumLibrary Docs](https://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html)  
+  [GitHub](https://github.com/serhatbolsu/robotframework-appiumlibrary)
+
+- **Appium Client:**  
+  [PyPI](https://pypi.org/project/Appium-Python-Client/)  
+  [GitHub](https://github.com/appium/python-client)
+
+- **Appium:**  
+  [Quickstart Install](https://appium.io/docs/en/2.2/quickstart/install/)  
+  [UIAutomator2 Driver](https://appium.io/docs/en/2.2/quickstart/uiauto2-driver/)
+
+---
