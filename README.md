@@ -19,9 +19,20 @@ Android Studio (para Android): Inclui o Android SDK, ferramentas de linha de com
 Xcode (para iOS, macOS apenas): Necessário para desenvolver e testar aplicações iOS, inclui simuladores.
 
 *   Instale as ferramentas de linha de comando: `xcode-select --install`
-Node.js e npm (ou yarn): Necessário para instalar e rodar o Appium Server.
+
+Nodejs 20.18.2 e npm (ou yarn): Necessário para instalar e rodar o Appium Server.
 *   Verifique a instalação: `node --version` e `npm --version`
-*   [Download Node.js](https://nodejs.org/)
+*   [Download Node.js](https://nodejs.org/en/blog/release/v20.18.2)
+
+Appium Inspector
+*   [Appium Inspector](https://github.com/appium/appium-inspector/releases/tag/v2025.3.1)
+
+VS-CODE:
+*   Plugin do Python para VS-CODE:
+https://marketplace.visualstudio.com/items?itemName=ms-python.python
+
+*   Plugin Robot Library para VS-CODE:
+https://marketplace.visualstudio.com/items?itemName=robocorp.robotframework-lsp
 
 ## Compatibility Matrix
 
@@ -41,7 +52,7 @@ The Appium Python Client depends on [Selenium Python binding](https://pypi.org/p
 the Selenium Python binding update might affect the Appium Python Client behavior.
 For example, some changes in the Selenium binding could break the Appium client.
 
-Instalação de Pacote
+Instalação dos Pacotes
 https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
 Versão do Robot Framework adotado no curso (Atual no momento do curso):
@@ -74,3 +85,6 @@ https://github.com/appium/python-client
 
 The Appium Python Client depends on Selenium Python binding, thus the Selenium Python binding update might affect the Appium Python Client behavior. For example, some changes in the Selenium binding could break the Appium client.
 
+Appium:
+https://appium.io/docs/en/2.2/quickstart/install/
+https://appium.io/docs/en/2.2/quickstart/uiauto2-driver/
