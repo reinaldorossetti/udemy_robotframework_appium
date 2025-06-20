@@ -45,42 +45,7 @@ appium -p 4723 -a 127.0.0.1 -pa wd/hub --allow-cors
 
 ---
 
-## Configuração de variáveis de ambiente com `.env` 🌱
 
-1. **Instale a biblioteca python-dotenv**  
-   No terminal:
-   ```bash
-   pip install python-dotenv
-   ```
-
-2. **Crie um arquivo `.env` na raiz do projeto**  
-   No terminal:
-   ```bash
-   echo SECRET_KEY=suachavesecreta > .env
-   echo API_URL=https://suaapi.com >> .env
-   ```
-   Adicione todas as variáveis necessárias no arquivo `.env`.
-
-3. **Carregue as variáveis no seu código Python**  
-   No início do seu script Python, adicione:
-   ```python
-   from dotenv import load_dotenv
-   import os
-
-   load_dotenv()  # Carrega as variáveis do .env
-
-   # Exemplo de uso
-   api_url = os.getenv("API_URL")
-   secret_key = os.getenv("SECRET_KEY")
-   ```
-
-4. **Adicione o `.env` ao `.gitignore`**  
-   Para evitar subir informações sensíveis ao repositório:
-   ```bash
-   echo .env >> .gitignore
-   ```
-
----
 
 ## Compatibility Matrix 📊
 
