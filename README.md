@@ -27,6 +27,14 @@ Nodejs 20.18.2 e npm (ou yarn): Necessário para instalar e rodar o Appium Serve
 Appium Inspector
 *   [Appium Inspector](https://github.com/appium/appium-inspector/releases/tag/v2025.3.1)
 
+```
+npm config set strict-ssl false
+npm install -g appium 
+appium driver install uiautomator2
+appium driver update uiautomator2
+appium -p 4723 -a 127.0.0.1 -pa wd/hub --allow-cors
+```
+
 VS-CODE:
 *   Plugin do Python para VS-CODE:
 https://marketplace.visualstudio.com/items?itemName=ms-python.python
