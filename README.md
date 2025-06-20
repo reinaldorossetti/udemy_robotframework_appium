@@ -27,6 +27,9 @@ Nodejs 20.18.2 e npm (ou yarn): Necessário para instalar e rodar o Appium Serve
 Appium Inspector
 *   [Appium Inspector](https://github.com/appium/appium-inspector/releases/tag/v2025.3.1)
 
+Git
+*   [Appium Inspector](https://git-scm.com/downloads)
+
 ```
 npm config set strict-ssl false
 npm install -g appium 
@@ -46,7 +49,7 @@ https://marketplace.visualstudio.com/items?itemName=robocorp.robotframework-lsp
 
 |Appium Python Client| Selenium binding| Python version |
 |----|----|----|
-|`5.1.1`+|`4.26.0`+ | 3.9+ |
+|`5.1.1`+| <5.0.0 | 3.9+ |
 |`4.5.0` - `5.1.0`|`4.26.0` - `4.31.0` | 3.9+ |
 |`4.3.0` -  `4.4.0`|`4.26.0` - `4.31.0` | 3.8+ |
 |`3.0.0` - `4.2.1` |`4.12.0` - `4.25.0` | 3.8+ |
