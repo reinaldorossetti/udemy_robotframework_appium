@@ -19,8 +19,6 @@ Node.js e npm (ou yarn): Necessário para instalar e rodar o Appium Server.
 *   Verifique a instalação: `node --version` e `npm --version`
 *   [Download Node.js](https://nodejs.org/)
 
-Instalação de Pacote
-https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
 Versão do Robot Framework adotado no curso (Atual no momento do curso):
 Robot Framework 7.3.1
@@ -45,7 +43,3 @@ https://github.com/serhatbolsu/robotframework-appiumlibrary
 
 Appium Client:
 https://pypi.org/project/Appium-Python-Client/
-https://github.com/appium/python-client
-
-The Appium Python Client depends on Selenium Python binding, thus the Selenium Python binding update might affect the Appium Python Client behavior. For example, some changes in the Selenium binding could break the Appium client.
-
