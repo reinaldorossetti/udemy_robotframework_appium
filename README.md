@@ -1,6 +1,6 @@
 # udemy_robotframework_appium 🚀🤖
 
-## Pré-requisitos 🛠️
+## 1. Pré-requisitos 🛠️
 Antes de começar, certifique-se de ter os seguintes itens instalados e configurados em seu sistema:
 
 - **Python 3.11.9**: O Robot Framework e a AppiumLibrary requerem Python.  
