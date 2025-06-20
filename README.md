@@ -113,7 +113,7 @@ pip install robotframework==7.3.1
 **Robot Appium Library**  
 ```bash
 pip install robotframework-appiumlibrary==2.1.0
-pip install Appium-Python-Client
+pip install Appium-Python-Client<4.0.0
 ```
 
 ---
