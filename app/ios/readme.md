@@ -1,0 +1,1 @@
+Adicionar do pacote compilado para essa pasta, não fazer o commit para o repositório, pois é uma má prática.

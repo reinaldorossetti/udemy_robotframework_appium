@@ -1,0 +1,1 @@
+Adicionar o apk nessa pasta, não fazer o commit para o repositório, pois é uma má prática.
