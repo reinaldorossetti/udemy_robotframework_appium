@@ -32,6 +32,9 @@ Antes de começar, certifique-se de ter os seguintes itens instalados e configur
 - **Git**  
   * [⬇️ Download Git](https://git-scm.com/downloads)
 
+- **VS-CODE**  
+  * [⬇️ Download Vs-Code](https://code.visualstudio.com/download)
+
 Appium 2 - HOW TO
 ```bash
 npm install -g appium 
