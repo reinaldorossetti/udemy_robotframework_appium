@@ -36,6 +36,13 @@ Necessário para automação de testes Android.
   - [Oracle JDK](https://www.oracle.com/java/technologies/downloads/)  
   - *JDK 8 ou superior; JDK 11 ou 17 são boas escolhas.*
 
+- **Download Java 17.0.12:**  
+  - [⬇️ Java 17.0.12 para Windows (x64)](https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe)  
+  - [⬇️ Java 17.0.12 para macOS (x64)](https://download.oracle.com/java/17/archive/jdk-17.0.12_macos-x64_bin.dmg)  
+  - [⬇️ Java 17.0.12 para macOS (ARM)](https://download.oracle.com/java/17/archive/jdk-17.0.12_macos-aarch64_bin.dmg)  
+  - [Página oficial de downloads Oracle Java 17](https://www.oracle.com/java/technologies/downloads/archive/)
+
+
 ### ⚙️ Configuração da variável de ambiente JAVA_HOME
 
 #### 🪟 **Windows**
