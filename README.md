@@ -6,7 +6,7 @@ Antes de começar, certifique-se de ter os seguintes itens instalados e configur
 - **Python 3.11.9**: O Robot Framework e a AppiumLibrary requerem Python.  
   * Verifique a instalação: `python --version` ou `python3 --version`  
   * [⬇️ Download Python Windows](https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe)  
-  * [⬇️ Download Python](https://www.python.org/downloads/release/python-3119/)
+  * [⬇️ Pagina com Todas as Plataformas](https://www.python.org/downloads/release/python-3119/)
 
 > 💡 *O Python 3.11 é até 60% mais rápido que o 3.10. Veja [Faster CPython](https://devblogs.microsoft.com/python/python-311-faster-cpython/) para detalhes.*
 

@@ -4,6 +4,10 @@ Este guia irá ajudá-lo a instalar e configurar o Appium para automação de te
 
 ---
 
+> 💡 **Dica:** Para copiar rapidamente qualquer comando abaixo, clique no ícone de "copiar" que aparece no canto superior direito dos blocos de código no GitHub ou no VS Code!
+
+---
+
 ## 1️⃣ Verificando Node.js e npm
 
 Abra o terminal e execute:
@@ -47,20 +51,27 @@ source ~/.bash_profile
 ```
 
 #### ✅ **Verificação**
+Versão do Java
 ```bash
-java -version
-javac -version
-echo $JAVA_HOME # (macOS/Linux)
-echo %JAVA_HOME% # (Windows)
+java --version
 ```
-
+Verificar o path do Java pelo terminal:
+# MacOS/Linux ou Git-Bash
+```bash
+echo $JAVA_HOME 
+```
+Terminal do Windows ou Power-Shell
+```bash
+echo %JAVA_HOME%
+```
 ---
 
 ## 3️⃣ Android SDK (para testes Android) 🤖
 
 Necessário para interagir com dispositivos e emuladores Android.
 
-- **Download:** [Android Studio](https://developer.android.com/studio)
+- **Site:** [Android Studio](https://developer.android.com/studio)
+- **Download:** [Android Studio Usado](https://redirector.gvt1.com/edgedl/android/studio/install/2025.1.1.13/android-studio-2025.1.1.13-windows.exe)
 
 ### ⚙️ Instalação e configuração do SDK
 
