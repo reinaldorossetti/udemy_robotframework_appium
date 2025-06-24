@@ -13,7 +13,12 @@ Antes de começar, certifique-se de ter os seguintes itens instalados e configur
 - **Java Development Kit (JDK)**: Necessário para o Appium e ferramentas Android.  
   * Verifique a instalação: `java -version`  
   * [⬇️ Download JDK](https://www.oracle.com/java/technologies/downloads/)
-
+- **Download Java 17.0.12:**  
+  - [⬇️ Java 17.0.12 para Windows (x64)](https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe)  
+  - [⬇️ Java 17.0.12 para macOS (x64)](https://download.oracle.com/java/17/archive/jdk-17.0.12_macos-x64_bin.dmg)  
+  - [⬇️ Java 17.0.12 para macOS (ARM)](https://download.oracle.com/java/17/archive/jdk-17.0.12_macos-aarch64_bin.dmg)  
+  - [Página oficial de downloads Oracle Java 17](https://www.oracle.com/java/technologies/downloads/archive/)
+  - 
 - **Android Studio** (para Android): Inclui o Android SDK, ferramentas de linha de comando e emuladores.  
   * Configure as variáveis de ambiente `ANDROID_HOME` e adicione os diretórios `platform-tools` e `tools` ao seu `PATH`.  
   * [⬇️ Download Android Studio](https://developer.android.com/studio)
