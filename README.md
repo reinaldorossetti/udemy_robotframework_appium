@@ -17,6 +17,7 @@ Antes de começar, certifique-se de ter os seguintes itens instalados e configur
 - **Android Studio** (para Android): Inclui o Android SDK, ferramentas de linha de comando e emuladores.  
   * Configure as variáveis de ambiente `ANDROID_HOME` e adicione os diretórios `platform-tools` e `tools` ao seu `PATH`.  
   * [⬇️ Download Android Studio](https://developer.android.com/studio)
+  * [⬇️ Download Android Studio 2025.1.1.13](https://redirector.gvt1.com/edgedl/android/studio/install/2025.1.1.13/android-studio-2025.1.1.13-windows.exe)
 
 - **Xcode** (para iOS, macOS apenas): Necessário para desenvolver e testar aplicações iOS, inclui simuladores.  
   * Instale as ferramentas de linha de comando: `xcode-select --install`
