@@ -10,12 +10,20 @@ Este guia irá ajudá-lo a instalar e configurar o Appium para automação de te
 
 ## 1️⃣ Verificando Node.js e npm
 
+> **Versão recomendada:**  
+> Node.js **20.18.2**  
+> [⬇️ Download Node.js 20.18.2](https://nodejs.org/dist/v20.18.2/)
+
 Abra o terminal e execute:
+
 ```bash
 node -v
+```
+
+```bash
 npm -v
 ```
-Você deverá ver as versões instaladas de cada um.
+Você deverá ver a versão **20.18.2** do Node.js instalada.
 
 ---
 
@@ -41,29 +49,71 @@ Necessário para automação de testes Android.
 
 #### 🍎 **macOS/Linux**
 Adicione ao seu arquivo de perfil do shell:
+
 ```bash
 export JAVA_HOME=/caminho/para/seu/jdk
+```
+
+```bash
 export PATH=$JAVA_HOME/bin:$PATH
 ```
+
 Recarregue o perfil:
+
 ```bash
 source ~/.bash_profile
 ```
 
+---
+
 #### ✅ **Verificação**
-Versão do Java
+
+Verifique a versão do Java:
+
 ```bash
 java --version
 ```
-Verificar o path do Java pelo terminal:
-# MacOS/Linux ou Git-Bash
+
+Verifique o JAVA_HOME em macOS/Linux ou Git-Bash:
+
 ```bash
-echo $JAVA_HOME 
+echo $JAVA_HOME
 ```
-Terminal do Windows ou Power-Shell
+
+Verifique o JAVA_HOME em Windows ou PowerShell:
+
 ```bash
 echo %JAVA_HOME%
 ```
+
+---
+
+#### 🔎 **Como encontrar o caminho do Java via terminal**
+
+**Windows (Prompt de Comando ou PowerShell):**
+```bash
+where java
+```
+O caminho exibido será algo como:  
+`C:\Program Files\Java\jdk-11.0.x\bin\java.exe`
+
+**macOS/Linux:**
+```bash
+which java
+```
+O caminho exibido será algo como:  
+`/usr/bin/java`
+
+Para descobrir o diretório de instalação real do JDK (caso seja um link simbólico) no macOS/Linux:
+```bash
+readlink -f $(which java)
+```
+
+Para encontrar o JAVA_HOME automaticamente no macOS:
+```bash
+/usr/libexec/java_home
+```
+
 ---
 
 ## 3️⃣ Android SDK (para testes Android) 🤖
@@ -88,28 +138,49 @@ Necessário para interagir com dispositivos e emuladores Android.
 - Crie uma variável de sistema `ANDROID_HOME`  
   Exemplo: `C:\Users\SeuUsuario\AppData\Local\Android\Sdk`
 - Adicione ao `Path`:
-  ```
-  %ANDROID_HOME%\platform-tools
-  %ANDROID_HOME%\tools
-  %ANDROID_HOME%\tools\bin
-  %ANDROID_HOME%\emulator
-  ```
+
+```bash
+%ANDROID_HOME%\platform-tools
+```
+```bash
+%ANDROID_HOME%\tools
+```
+```bash
+%ANDROID_HOME%\tools\bin
+```
+```bash
+%ANDROID_HOME%\emulator
+```
 
 #### 🍎 **macOS/Linux**
 Adicione ao seu arquivo de perfil do shell:
+
 ```bash
 export ANDROID_HOME=$HOME/Library/Android/sdk
+```
+```bash
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+```bash
 export PATH=$PATH:$ANDROID_HOME/tools
+```
+```bash
 export PATH=$PATH:$ANDROID_HOME/tools/bin
+```
+```bash
 export PATH=$PATH:$ANDROID_HOME/emulator
 ```
 
 #### ✅ **Verificação**
+
 ```bash
 adb version
-echo $ANDROID_HOME # (macOS/Linux)
-echo %ANDROID_HOME% # (Windows)
+```
+```bash
+echo $ANDROID_HOME
+```
+```bash
+echo %ANDROID_HOME%
 ```
 
 ---
@@ -119,34 +190,46 @@ echo %ANDROID_HOME% # (Windows)
 Para automação de testes iOS, é necessário um Mac.
 
 - **Xcode:** Instale pela Mac App Store
+
 - **Xcode Command Line Tools:**
-  ```bash
-  xcode-select --install
-  ```
+    ```bash
+    xcode-select --install
+    ```
+
 - **Homebrew:** [Instale aqui](https://brew.sh/)
+
 - **Dependências adicionais:**
-  ```bash
-  npm install -g ios-deploy
-  brew install libimobiledevice ideviceinstaller
-  brew install carthage
-  brew install ios-webkit-debug-proxy
-  ```
+    ```bash
+    npm install -g ios-deploy
+    ```
+    ```bash
+    brew install libimobiledevice ideviceinstaller
+    ```
+    ```bash
+    brew install carthage
+    ```
+    ```bash
+    brew install ios-webkit-debug-proxy
+    ```
+
 - **Aceitar licenças do Xcode:**
-  ```bash
-  sudo xcodebuild -license accept
-  ```
+    ```bash
+    sudo xcodebuild -license accept
+    ```
 
 ---
 
 ## 5️⃣ Instalação do Appium Server 🚀
 
 Com os pré-requisitos configurados, instale o Appium Server globalmente:
+
 ```bash
 npm install -g appium
 ```
 ⏳ *Este comando pode levar alguns minutos.*
 
 #### ✅ **Verificação**
+
 ```bash
 appium -v
 ```
@@ -162,10 +245,12 @@ Para uma interface gráfica, baixe o [Appium Inspector](https://github.com/appiu
 ## 7️⃣ Instalação do Appium Doctor 🩺
 
 O appium-doctor verifica se sua configuração está correta:
+
 ```bash
 npm install -g appium-doctor
 ```
 #### ✅ **Verificação**
+
 ```bash
 appium-doctor --version
 ```
@@ -175,16 +260,19 @@ appium-doctor --version
 ## 8️⃣ Verificando a Instalação com Appium Doctor 🔎
 
 ### 🌍 Verificação Geral
+
 ```bash
 appium-doctor
 ```
 
 ### 🤖 Verificação Específica para Android
+
 ```bash
 appium-doctor --android
 ```
 
 ### 🍎 Verificação Específica para iOS
+
 ```bash
 appium-doctor --ios
 ```
@@ -199,7 +287,7 @@ appium-doctor --ios
 ```
 info AppiumDoctor ### Diagnostic starting ###
 info AppiumDoctor ✔ The Node.js binary was found at: /usr/local/bin/node
-info AppiumDoctor ✔ Node version is 18.16.0
+info AppiumDoctor ✔ Node version is 20.18.2
 ...
 info AppiumDoctor ✖ ANDROID_HOME is NOT set! [Fix Manual]
 info AppiumDoctor ✖ JAVA_HOME is NOT set! [Fix Manual]
@@ -215,21 +303,21 @@ info AppiumDoctor ### Diagnostic completed, 2 fixes needed. ###
 Com o Appium 2.x, os drivers são instalados separadamente.
 
 - **Listar drivers disponíveis:**
-  ```bash
-  appium driver list
-  ```
+    ```bash
+    appium driver list
+    ```
 - **Instalar driver UiAutomator2 (Android):**
-  ```bash
-  appium driver install uiautomator2
-  ```
+    ```bash
+    appium driver install uiautomator2
+    ```
 - **Instalar driver XCUITest (iOS):**
-  ```bash
-  appium driver install xcuitest
-  ```
+    ```bash
+    appium driver install xcuitest
+    ```
 - **Verificar drivers instalados:**
-  ```bash
-  appium driver list --installed
-  ```
+    ```bash
+    appium driver list --installed
+    ```
 
 ---
 
