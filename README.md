@@ -31,12 +31,17 @@ Antes de começar, certifique-se de ter os seguintes itens instalados e configur
 - **Git**  
   * [⬇️ Download Git](https://git-scm.com/downloads)
 
+Appium 2 - HOW TO
 ```bash
-npm config set strict-ssl false
 npm install -g appium 
 appium driver install uiautomator2
 appium driver update uiautomator2
 appium -p 4723 -a 127.0.0.1 -pa wd/hub --allow-cors
+```
+
+Em caso de dar erro com certificado
+```bash
+npm config set strict-ssl false
 ```
 
 - **VS Code**  
@@ -106,5 +111,8 @@ pip install Appium-Python-Client<4.0.0
 - **Appium:**  
   [Quickstart Install](https://appium.io/docs/en/2.2/quickstart/install/)  
   [UIAutomator2 Driver](https://appium.io/docs/en/2.2/quickstart/uiauto2-driver/)
+  [Appium Architecture](https://www.lambdatest.com/blog/appium-architecture/)
 
+- **Boas Práticas:**
+  [Style Guide](https://docs.robotframework.org/docs/style_guide)
 ---
