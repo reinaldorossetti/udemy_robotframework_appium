@@ -14,15 +14,12 @@ Este guia irá ajudá-lo a instalar e configurar o Appium para automação de te
 > Node.js **20.18.2**  
 > [⬇️ Download Node.js 20.18.2](https://nodejs.org/dist/v20.18.2/)
 
-Abra o terminal e execute:
+Abra o terminal e execute o comando abaixo, para verificar a versão do node e se a instalação está reflentido no terminal:
 
 ```bash
 node -v
 ```
 
-```bash
-npm -v
-```
 Você deverá ver a versão **20.18.2** do Node.js instalada.
 
 ---
@@ -360,7 +357,7 @@ Com tudo instalado e verificado pelo appium-doctor, você está pronto para:
      appium -p 4723 -a 0.0.0.0 -pa wd/hub --allow-cors
      ```
 Argumento (--allow-cors)
-- Se o servidor Appium deve permitir conexões de navegador da Web de qualquer host (é necessario adicionar para não ter conflitos)
+- Se o servidor Appium deve permitir conexões de navegador da Web de qualquer host (é necessário adicionar para não ter conflitos)
 
 2. **🔍 Usar o Appium Inspector**
    - Baixe e execute o Appium Inspector para inspecionar elementos da UI do seu aplicativo.
