@@ -359,6 +359,8 @@ Com tudo instalado e verificado pelo appium-doctor, você está pronto para:
      ```bash
      appium -p 4723 -a 0.0.0.0 -pa wd/hub --allow-cors
      ```
+Argumento (--allow-cors)
+- Se o servidor Appium deve permitir conexões de navegador da Web de qualquer host (é necessario adicionar para não ter conflitos)
 
 2. **🔍 Usar o Appium Inspector**
    - Baixe e execute o Appium Inspector para inspecionar elementos da UI do seu aplicativo.
