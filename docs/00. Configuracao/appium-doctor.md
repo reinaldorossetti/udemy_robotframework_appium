@@ -266,6 +266,8 @@ appium-doctor --version
 
 ## 8️⃣ Verificando a Instalação com Appium Doctor 🔎
 
+São os pré-requisitos e componentes essenciais que o Appium necessita para operar adequadamente no ambiente de desenvolvimento, devendo estar configurados conforme as especificações técnicas requeridas.
+
 ### 🌍 Verificação Geral
 
 ```bash
@@ -303,6 +305,7 @@ info AppiumDoctor ### Diagnostic completed, 2 fixes needed. ###
 ```
 🔧 **Ação:** Configure as variáveis de ambiente conforme descrito acima.
 
+As Dependências são divididas por Necessárias e Dependeências Opcionais. Opcional não é uma dependencia necessaria para o Appium rodar.
 ---
 
 ## 9️⃣ Instalação de Drivers (Appium 2.x) 🔌
