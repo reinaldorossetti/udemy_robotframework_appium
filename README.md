@@ -40,12 +40,17 @@ Antes de começar, certifique-se de ter os seguintes itens instalados e configur
 - **VS-CODE**  
   * [⬇️ Download Vs-Code](https://code.visualstudio.com/download)
 
-Appium 2 - HOW TO
+## 2. Appium Configuração 🛠️
 ```bash
 npm install -g appium 
 appium driver install uiautomator2
 appium driver update uiautomator2
 appium -p 4723 -a 127.0.0.1 -pa wd/hub --allow-cors
+appium --allow-cors
+```
+De forma reduzida o comando:
+```bash
+appium -a 127.0.0.1 --allow-cors
 ```
 
 Em caso de dar erro com certificado
