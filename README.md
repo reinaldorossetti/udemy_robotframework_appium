@@ -27,9 +27,9 @@ Antes de começar, certifique-se de ter os seguintes itens instalados e configur
 - **Xcode** (para iOS, macOS apenas): Necessário para desenvolver e testar aplicações iOS, inclui simuladores.  
   * Instale as ferramentas de linha de comando: `xcode-select --install`
 
-- **Node.js 20.18.2 e npm (ou yarn)**: Necessário para instalar e rodar o Appium Server.  
+- **Node.js 20.11.1 e npm (ou yarn)**: Necessário para instalar e rodar o Appium Server.  
   * Verifique a instalação: `node --version` e `npm --version`  
-  * [⬇️ Download Node.js](https://nodejs.org/en/blog/release/v20.18.2)
+  * [⬇️ Download Node.js](https://nodejs.org/en/blog/release/v20.11.1)
 
 - **Appium Inspector**  
   * [⬇️ Appium Inspector](https://github.com/appium/appium-inspector/releases/tag/v2025.3.1)
