@@ -70,7 +70,7 @@ source ~/.bash_profile
 
 ---
 
-#### ✅ **Verificação**
+#### ✅ **Verificação** - Comandos Utéis:
 
 Verifique a versão do Java:
 
@@ -178,7 +178,15 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 #### ✅ **Verificação**
 
 ```bash
-adb version
+adb devices
+```
+Para instalar o APK de forma externa vai console:
+```bash
+adb install nome_do_apk.apk
+```
+
+```bash
+adb d
 ```
 ```bash
 echo $ANDROID_HOME
@@ -350,7 +358,7 @@ Com tudo instalado e verificado pelo appium-doctor, você está pronto para:
 1. **🚀 Iniciar o Servidor Appium**
    - **Windows:**
      ```bash
-     appium -p 4723 -a 127.0.0.1 -pa wd/hub --allow-cors
+     appium -a 127.0.0.1 -pa wd/hub --allow-cors
      ```
    - **macOS:**
      ```bash
