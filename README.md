@@ -46,7 +46,7 @@ npm install -g appium
 appium driver install uiautomator2
 appium driver update uiautomator2
 appium -p 4723 -a 127.0.0.1 -pa wd/hub --allow-cors
-appium --allow-cors
+appium -pa wd/hub --allow-cors
 ```
 De forma reduzida o comando:
 ```bash
