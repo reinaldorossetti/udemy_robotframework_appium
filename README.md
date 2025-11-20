@@ -50,7 +50,7 @@ appium -pa wd/hub --allow-cors
 ```
 De forma reduzida o comando:
 ```bash
-appium -a 127.0.0.1 --allow-cors
+appium -a 127.0.0.1 -pa wd/hub --allow-cors
 ```
 
 Em caso de dar erro com certificado
